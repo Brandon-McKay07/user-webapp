@@ -27,11 +27,11 @@
             "styles": [
             
               "src/styles.css",
-              "user-webapp/node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "/Users/brandonmckay/FrontEndWorkspace/user-webapp/node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "user-webapp/node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "user-webapp/node_modules/jquery/dist/jquery.min.js"
+              "/Users/brandonmckay/FrontEndWorkspace/user-webapp/node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "/Users/brandonmckay/FrontEndWorkspace/user-webapp/node_modules/jquery/dist/jquery.min.js"
             ]
           },
           "configurations": {
