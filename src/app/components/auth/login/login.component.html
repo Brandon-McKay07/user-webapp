@@ -32,7 +32,7 @@
                         <div class="form-group form-check mt-3">
                           <input type="checkbox" class="form-check-input" id="remember" required>
                           <label class="form-check-label" for="remember">Remember me</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <a routerLink="/register" class="badge badge-dark">SignUp Here</a>
+                          <a (click)="goTo('/register')" class="link ms-3 ">Sign Up Here</a>
                         </div>
                         <button type="submit" class="btn btn-primary mt-3">Submit</button>
                       </form>

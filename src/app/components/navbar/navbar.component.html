@@ -10,7 +10,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">My Orders</a>
@@ -27,17 +27,17 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item" routerLink="/login">Login</a></li>
-              <li><a class="dropdown-item" href="/register">Register</a></li>
-              <li><a class="dropdown-item" href="/profile">Profile</a></li>
+              <li><a class="dropdown-item" routerLink="/register">Register</a></li>
+              <li><a class="dropdown-item" routerLink="/profile">Profile</a></li>
               <li><a class="dropdown-item" href="#">Logout</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Contact The Team</a></li>
+              <li><a class="dropdown-item" routerLink="/helpus">Contact The Team</a></li>
             </ul>
           </li>
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-dark" type="submit">Search</button>
+          <button class="btn btn-outline-light" type="submit">Search</button>
         </form>
         
       </div>

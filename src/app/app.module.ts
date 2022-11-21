@@ -1,3 +1,4 @@
+import { RouterModule } from '@angular/router';
 import { ProductsModule } from './components/products/products.module';
 
 
@@ -13,10 +14,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
-import { OrdersComponent } from './components/orders/orders.component';
-import { HistoryComponent } from './components/orders/history/history.component';
 import { AuthModule } from './components/auth/auth.module';
 import { OrdersModule } from './components/orders/orders.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -39,6 +39,8 @@ import { OrdersModule } from './components/orders/orders.module';
     ProductsModule,
     AuthModule,
     OrdersModule,
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

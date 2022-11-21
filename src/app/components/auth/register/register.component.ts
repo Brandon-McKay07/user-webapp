@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, UrlTree } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
+
+constructor(private router: Router){}
+
+  ngOnInit(): void {
+
+  }
+
+
+  goTo(url:any){
+    this.router.navigateByUrl(url);
+  }
 }

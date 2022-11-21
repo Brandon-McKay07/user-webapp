@@ -11,6 +11,7 @@ import { ViewComponent } from './components/products/view/view.component';
 import { WishlistComponent } from './components/products/wishlist/wishlist.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { ProfileComponent } from './components/auth/profile/profile.component';
+import { HelpusComponent } from './components/auth/helpus/helpus.component';
 
 const routes: Routes = [
 
@@ -19,7 +20,7 @@ const routes: Routes = [
   {path:'login', component:LoginComponent},
   {path:'register', component:RegisterComponent},
   {path:'profile', component:ProfileComponent},
-
+  {path:'helpus', component:HelpusComponent},
   {path:'change-password', component:ChangePasswordComponent},
   {path:'products', children:[
     {path:'',component:ProductsComponent},
