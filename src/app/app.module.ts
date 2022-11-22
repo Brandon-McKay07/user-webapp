@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { ProductsModule } from './components/products/products.module';
 
@@ -40,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     AuthModule,
     OrdersModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

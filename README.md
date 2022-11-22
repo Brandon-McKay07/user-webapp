@@ -29,3 +29,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 \*\* ng g c components creates new components
 
 \*\* ng g m creates new modules within components
+
+use
+
+https://fakestoreapi.com/products
+
+for dummy store api data
