@@ -12,12 +12,14 @@ import { WishlistComponent } from './components/products/wishlist/wishlist.compo
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { ProfileComponent } from './components/auth/profile/profile.component';
 import { HelpusComponent } from './components/auth/helpus/helpus.component';
+import { LogoutComponent } from './components/auth/logout/logout.component';
 
 const routes: Routes = [
 
   {path:'', redirectTo:'/home', pathMatch:"full"},
   {path:'home' ,component:HomeComponent},
   {path:'login', component:LoginComponent},
+  {path:'logout', component:LogoutComponent},
   {path:'register', component:RegisterComponent},
   {path:'profile', component:ProfileComponent},
   {path:'helpus', component:HelpusComponent},

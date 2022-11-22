@@ -6,6 +6,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { HelpusComponent } from './helpus/helpus.component';
+import { LogoutComponent } from './logout/logout.component';
 
 
 
@@ -17,6 +18,7 @@ import { HelpusComponent } from './helpus/helpus.component';
     ChangePasswordComponent,
     ForgetPasswordComponent,
     HelpusComponent,
+    LogoutComponent,
 
   ],
   imports: [
