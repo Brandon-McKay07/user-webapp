@@ -23,11 +23,11 @@
               <button type="button" class="btn btn-sm btn-dark mr-2">
                 Buy Now
               </button>
-              <button type="button" class="btn btn-sm btn-dark mr-2" >
+              <button type="button" class="btn btn-sm btn-dark mr-2" (click)="addProductToShoppingCart(product)" >
                 Add to Cart
               </button>
-              <button type="button" class="btn btn-sm btn-dark" >
-                Add to Whishlist
+              <button type="button" class="btn btn-sm btn-dark" (click)="addProductToWishlist(product)">
+                Add to Wishlist
               </button>
             </div>
           </div>

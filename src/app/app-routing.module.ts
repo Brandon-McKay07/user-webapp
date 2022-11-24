@@ -1,3 +1,4 @@
+import { OrdersComponent } from './components/orders/orders.component';
 import { ProductsComponent } from './components/products/products.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
@@ -22,6 +23,8 @@ const routes: Routes = [
   {path:'logout', component:LogoutComponent},
   {path:'register', component:RegisterComponent},
   {path:'profile', component:ProfileComponent},
+  {path:'orders', component:OrdersComponent},
+
   {path:'helpus', component:HelpusComponent},
   {path:'change-password', component:ChangePasswordComponent},
   {path:'products', children:[

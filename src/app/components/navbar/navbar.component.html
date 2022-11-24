@@ -13,17 +13,27 @@
             <a class="nav-link active" aria-current="page" routerLink="/home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">My Orders</a>
+            <a class="nav-link" routerLink="/orders">My Orders</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Shopping Cart</a>
+            <a class="nav-link" routerLink="/products/cart">Shopping Cart
+              <span  *ngIf="productSrv.cartProducts.length !==0" class="position-absolute top-2 start-10 translate-middle badge rounded-pill bg-danger">
+                {{productSrv.cartProducts.length || 0}}
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/products/view">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Wish List</a>
-          </li>
+            <a class="nav-link" routerLink="/products/wishlist">Wish List
+              <span class="position-absolute top-2 start-10 translate-middle badge rounded-pill bg-danger" *ngIf="productSrv.wishlistProducts.length !==0">
+                  {{productSrv.wishlistProducts.length || 0}}
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a>
+           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              User Portal

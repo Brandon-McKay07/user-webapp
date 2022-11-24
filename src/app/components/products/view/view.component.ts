@@ -31,4 +31,11 @@ export class ViewComponent implements OnInit {
     })
   }
 
+  addProductToWishlist(product:any) {
+    this.productSrv.addProductsToWishList(product);
+  }
+
+  addProductToShoppingCart(product:any) {
+    this.productSrv.addProductToShoppingCart(product);
+  }
 }
