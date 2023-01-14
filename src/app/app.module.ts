@@ -42,7 +42,8 @@ import { FormsModule } from '@angular/forms';
     OrdersModule,
     FormsModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
