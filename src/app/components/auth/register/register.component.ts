@@ -1,4 +1,4 @@
-import { FormGroup, FormControl } from '@angular/forms';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Component } from '@angular/core';
 import { Router, UrlTree } from '@angular/router';
 
@@ -32,5 +32,11 @@ constructor(private router: Router){}
 
   goTo(url:any){
     this.router.navigateByUrl(url);
+  }
+
+  signUp(){
+    let user=this.userRef.value;
+    console.log(user);
+    
   }
 }

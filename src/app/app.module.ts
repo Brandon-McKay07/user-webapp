@@ -17,7 +17,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { AuthModule } from './components/auth/auth.module';
 import { OrdersModule } from './components/orders/orders.module';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,7 +40,7 @@ import { FormsModule } from '@angular/forms';
     ProductsModule,
     AuthModule,
     OrdersModule,
-    FormsModule,
+    ReactiveFormsModule,
     RouterModule,
     HttpClientModule,
   
