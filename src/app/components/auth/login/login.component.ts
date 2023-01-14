@@ -9,10 +9,10 @@ import { FormControl, FormGroup } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-// userRef = new Formgroup({
-// email: new Formcontrol(),
-// password: new Formcontrol()
-// });
+ userRef = new FormGroup({
+ email: new FormControl(),
+ password: new FormControl()
+});
 
   constructor(private router: Router){}
 

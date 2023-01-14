@@ -1,3 +1,4 @@
+import { FormGroup, FormControl } from '@angular/forms';
 import { Component } from '@angular/core';
 import { Router, UrlTree } from '@angular/router';
 
@@ -8,6 +9,19 @@ import { Router, UrlTree } from '@angular/router';
 })
 export class RegisterComponent {
 
+  userRef = new FormGroup({
+    user: new FormControl(),
+    email: new FormControl(),
+    password: new FormControl(),
+    fullName: new FormControl(),
+    street: new FormControl(),
+    city: new FormControl(),
+    state: new FormControl(),
+    country: new FormControl(),
+    pincode: new FormControl(),
+    contact: new FormControl(),
+   
+  })
 
 constructor(private router: Router){}
 
