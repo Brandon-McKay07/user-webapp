@@ -1,3 +1,4 @@
+import { UserService } from './../../../services/user.service';
 import { FormControl, FormGroup } from '@angular/forms';
 import { Component } from '@angular/core';
 import { Router, UrlTree } from '@angular/router';
@@ -23,7 +24,7 @@ export class RegisterComponent {
    
   })
 
-constructor(private router: Router){}
+constructor(private router: Router,public us:UserService){}
 
   ngOnInit(): void {
 
@@ -36,7 +37,16 @@ constructor(private router: Router){}
 
   signUp(){
     let user=this.userRef.value;
-    console.log(user);
-    
+    // console.log(user);
+    this.us.signUp(user).subscribe({
+      next:(result:any)=>{
+        alert(result)
+      },
+      error:(error:any)=>console.log(error),
+      complete:()=>console.log("done!")
+      
+      
+    })
+    this.userRef.reset();
   }
 }
