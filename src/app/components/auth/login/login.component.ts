@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormControl, FormGroup } from '@angular/forms';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,7 @@ export class LoginComponent implements OnInit {
  password: new FormControl()
 });
 
-  constructor(private router: Router){}
+  constructor(private router: Router,public us:UserService){}
 
 ngOnInit(): void {}
 
@@ -22,11 +23,23 @@ ngOnInit(): void {}
     this.router.navigateByUrl(url);
   }
 
-  // signIn(){
-  //   let user = this.userRef.value;
-  // }
-
+  signIn(){
+    let user = this.userRef.value;
+   
+    this.us.signIn(user).subscribe({
+      next:(result:any)=> {
+         console.log(result);
+         if(result=="success"){
+              this.router.navigate(["home"]);
+         }else {
+          alert("failure try once again")
+         }
+      },
+      error:(error:any)=>console.log(error),
+      complete:()=>console.log("done!")
+    })
+this.userRef.reset();
 
 }
 
-
+}
