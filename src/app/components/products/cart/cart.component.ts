@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductsService } from 'src/app/services/products.service';
 
+//Great job Brandon
+
 @Component({
   selector: 'app-cart',
   templateUrl: './cart.component.html',
