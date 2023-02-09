@@ -30,23 +30,24 @@ export class ProductsService {
 
 
       // add products to cart
-  addProductToShoppingCart(prd:any, prdRemoveBool?: boolean, prdIdx=-1) {
-    // add product into cart for multiple time.
-    if(this.cartProducts.some(x=>x["id"]===prd["id"])) { 
-      let idx = this.cartProducts.findIndex(x=> x["id"]===prd["id"]);
-      this.cartProducts[idx]["quantity"] +=1;
-      console.log(prd['title'], "Alreay Added to Cart, Quantity Updated");
-    } else{
-      this.cartProducts.push( {
-        ...prd,
-        "quantity": 1
-      });
-      console.log(prd['title'], "Product Added to Shoping Cart");
-    }
-  }
+      addProductToShoppingCart(prd:any, prdRemoveBool?: boolean, prdIdx=-1) {
+        // add product into cart for multiple time.
+          console.log(this.cartProducts)
+        if(this.cartProducts.some(x=>x["productId"]===prd["productId"])) { 
+          let idx = this.cartProducts.findIndex(x=> x["productId"]===prd["productId"]);
+          this.cartProducts[idx]["quantity"] +=1;
+          console.log(prd['title'], "Alreay Added to Cart, Quantity Updated");
+        } else{
+          this.cartProducts.push( {
+            ...prd,
+            "quantity": 1
+          });
+          console.log(prd['title'], "Product Added to Shoping Cart");
+        }
+      }
 
      addProductsToWishList(prd: any, prdRmoveBool?:boolean, prdIdx:number=-1){
-        if(!this.wishlistProducts.some(x=>x["id"]===prd["id"])){
+        if(!this.wishlistProducts.some(x=>x["productId"]===prd["productId"])){
           this.wishlistProducts.push({
             ...prd, "quantity":1
           })
